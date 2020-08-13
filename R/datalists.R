@@ -23,7 +23,7 @@ download_datalist <- function(file, language = "de") {
   }
 
   # Build the URL according to the given language
-  url <- paste0("https://logib.admin.ch/assets/Data/Datalist_",
+  url <- paste0("https://www.ebg.admin.ch/dam/ebg/en/dokumente/lohngleichheit/logib/Dokumente_Workshop/beispiel_ausgefuelltes_datenblatt.xlsx.download.xlsx/Datalist_Test_EN.xlsx",
                 substr(language, 1, 1), ".xlsx")
 
   utils::download.file(url, file, mode = "wb")
